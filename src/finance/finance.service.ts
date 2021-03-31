@@ -69,7 +69,7 @@ export class FinanceService {
   async settleMoney(account: AccountEntity, value: number, task: TaskEntity) {
     try {
       //TODO seed company account
-      const companyAccount = await this.getAccount({ firstName: 'Ali', lastName: 'Saadat' })
+      const companyAccount = await this.getAccount({ firstName: 'AAA', lastName: 'DDDDD' })
       await this.createTransaction(companyAccount, 0, value, PaymentStatusEnum.PAID, task)
       await this.createTransaction(account, value, 0, PaymentStatusEnum.PAID, task)
 
